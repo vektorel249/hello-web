@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürün Listesi</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="section">
+        <fieldset>
+            <legend>Ürün Bilgileri</legend>
+            <div class="form-item">
+                <label>Ürün Adı</label>
+                <input id="txtName" onkeydown="makeUpper()" onchange="makeUpper()" />
+            </div>
+            <div class="form-item">
+                <label>Fiyatı</label>
+                <input id="txtPrice" />
+            </div>
+            <div class="form-item">
+                <label>Stok</label>
+                <input id="txtStock" />
+            </div>
+        </fieldset>
+        <div class="commands">
+        <button id="btnAdd" onclick="add()">Kaydet</button>
+    </div>
+    </div>
+    <div class="section">
+        <h2>Ürün Listesi</h2>
+        <table id="tblProducts">
+            <tr>
+                <th>Ürün Adı</th>
+                <th>Fiyatı</th>
+                <th>Stok</th>
+            </tr>
+            
+        </table>
+    </div>
+</body>
+
+</html>

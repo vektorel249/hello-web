@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+    <script>
+        function writeLog() {
+            let liste = document.getElementById("liste");
+            for(let i = 0; i < 10; i++) {
+                let li = document.createElement("li");
+                li.innerText = "Merhaba " + i;
+                liste.append(li)
+            }
+        }
+    </script>
+</head>
+<body>
+    <a href="sum.html">Sayı Toplamaca</a>
+    <button onclick="writeLog()">Yaz</button>
+    <ul id="liste"></ul>
+</body>
+</html>

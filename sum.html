@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayı Toplama</title>
+    <script>
+        function sum() {
+            let txt1 = document.getElementById("txt1");
+            let txt2 = document.getElementById("txt2");
+
+            let n1 = parseInt(txt1.value);
+            let n2 = parseInt(txt2.value);
+
+            let lblResult = document.getElementById("lblResult");
+            lblResult.innerText = n1 + n2;
+        }
+    </script>
+</head>
+<body>
+    <input id="txt1" />
+    <input id="txt2" />
+    <button onclick="sum()">Topla</button>
+    <span id="lblResult"></span>
+</body>
+</html>

@@ -1,0 +1,92 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.section {
+    margin: 20px auto;
+    width: 800px;
+}
+
+fieldset {
+    display: flex;
+}
+fieldset .form-item {
+    flex: 1;
+    display: flex;
+    font-size: 12px;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.form-item label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-item input {
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid #aaaaaa;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.commands {
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    padding: 0px 5px;
+}
+.commands button {
+    height: 30px;
+    width: 100px;
+    background-color: #149be9;
+    border: none;
+    color: white;
+    align-content: flex-end;
+    border-radius: 4px;
+}
+.commands button:hover {
+    cursor: pointer;
+    background-color: #0c6ba1;
+}
+
+/* CHAT GPT ÖRNEĞİ */
+
+#tblProducts {
+    width: 100%;
+    border-collapse: collapse; /* Hücre kenarlıklarını birleştirir */
+    margin: 20px 0; /* Tablonun etrafında boşluk bırakır */
+    text-align: left; /* Metni sola hizalar */
+}
+
+#tblProducts th {
+    background-color: #2395e0; /* Başlık hücresinin arka plan rengi */
+    color: white; /* Yazı rengi beyaz */
+    padding: 12px 15px; /* Hücreye iç boşluk */
+    text-transform: uppercase; /* Büyük harf yapar */
+    font-weight: bold; /* Kalın yazı */
+}
+
+/* Veri Hücreleri */
+#tblProducts td {
+    padding: 8px 10px; /* Hücreye iç boşluk */
+    border-bottom: 1px solid #ddd; /* Alt sınır */
+}
+
+/* Zebra Etkisi (Alternatif Satırlarda Farklı Renkler) */
+#tblProducts tr:nth-child(even) {
+    background-color: #f2f2f2; /* Çift satırlara açık gri arka plan rengi */
+}
+
+#tblProducts tr:hover {
+    background-color: #ddd; /* Üzerine gelindiğinde satırın arka plan rengini değiştirir */
+}
+
+/* Kenarlık Stili */
+#tblProducts {
+    border: 1px solid #ddd; /* Tablonun etrafında ince gri kenarlık */
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Design</title>
+    <style>
+        /* CSS tanımlarında yazılı olan ifade;
+           - salt hali ise element, (body, h1, a, p, span)
+           - # prefix'i ile yazıldı ise id, (#container, #main-title)
+           - . prefix'i ile yazıldı ise class (.city, .user)
+           
+           olarak aranır 
+           
+           CSS tamamen yukarıdan aşağıda XML node'ları için hiyerarşik olarak etki eder
+           */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+        #main-title {
+            text-align: center;
+        }
+        #container {
+            width: 600px;
+            margin: 0px auto;
+            padding: 10px;
+        }
+
+        #footer {
+            position: fixed;
+            bottom: 0;
+            padding: 10px;
+        }
+
+        #footer a {
+            margin-right: 10px;
+        }
+
+        .city {
+            border-radius: 10px;
+            width: 170px;
+            display: inline-block;
+            margin: 2px;
+            padding: 10px;
+            height: 240px;
+            background-color: #eeeeee;
+        }
+
+        .city:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            border: 2px solid #b0ecff;
+        }
+
+        .city h3 {
+            text-align: center;
+        }
+
+        .city span {
+            display: block;
+            font-size: 24px;
+            margin-top: 10px;
+            text-align: center;
+            font-family: 'Consolas';
+        }
+
+        .city img {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .city p {
+            margin-top: 60px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="main-title">Güncel Hava Durumu</h1>
+    <div id="container">
+        <div class="city">
+            <h3>Ankara</h3>
+            <img src="images/sunny.png" />
+            <span>16 <sup>o</sup>C</span>
+            <p>Hava mevsim normallerinin üzerinde. </p>
+        </div>
+        <div class="city">
+            <h3>İstanbul</h3>
+            <img src="images/rainy.png" />
+            <span>9 <sup>o</sup>C</span>
+            <p>Mart ayının yapışlı etkisi devam ediyor. </p>
+        </div>
+        <div class="city">
+            <h3>İzmir</h3>
+            <img src="images/cloudy.png" />
+            <span>14 <sup>o</sup>C</span>
+            <p>Haftasonu bulutlu ancak yağışsız geçecek. </p>
+        </div>
+    </div>
+
+    <div id="footer">
+        <a href="step1.html">İlk Deneme</a>
+        <a href="sum.html">Sayı Toplama</a>
+        <a href="firstjs.html">JavaScript Örneği</a>
+        <a href="products.html">Ürün Listesi</a>
+    </div>
+</body>
+
+</html>
